@@ -1,0 +1,58 @@
+/* START: Task 1 Styles */
+#task1{
+    display: flex;
+    justify-content: center;
+}
+td{
+    width: 100px;
+    height: 100px;
+    border: 2px double black;
+    text-align: center;
+}
+
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+#task2{
+    display: flex;
+    justify-content: center;
+}
+#myForm{
+    width:30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+}
+.validation{
+    border: solid 1px black;
+    margin-bottom: 15px;
+    padding: 15px 0 15px 15px;
+    width:90%;
+    color: white;
+    
+}
+#parent{
+    width: 95%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+#validate{
+    width: 85%;
+    height: 100%;
+}
+#submit{
+    width: 10%;
+    height: 100%;
+    padding: 0;
+    margin-left: 5px;
+}
+.red {
+    background-color: red;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+
+/* END: Task 3 Styles */

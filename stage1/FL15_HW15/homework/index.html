@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 15 - JS DOM Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="task1">
+    <table class="colors">
+      <tr id="firstraw" class="raw">
+        <td onclick="return MakeBlue(this)">Cell</td>
+        <td onclick="return MakeYellow(this)">Cell</td>
+        <td onclick="return MakeYellow(this)">Cell</td>
+      </tr>
+      <tr id="secondtraw" class="raw">
+        <td onclick="return MakeBlue(this)" class="firstInRaw">Cell</td>
+        <td onclick="return MakeYellow(this)">Cell</td>
+        <td onclick="return MakeGreen(this)">Special Cell</td>
+      </tr>
+      <tr id="thirdtraw" class="raw">
+        <td onclick="return MakeBlue(this)" class="firstInRaw">Cell</td>
+        <td onclick="return MakeYellow(this)">Cell</td>
+        <td onclick="return MakeYellow(this)">Cell</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div id="task2">
+    <form id="myForm">
+      <div id="validation"></div>
+      <div id="parent">
+        <input type="text" oninput="return pressHandler(this)" id="validate" placeholder="Type phone number in format +380*********" class=""/>
+        <button type="submit" form="myForm" value="Send" id="submit">Send</button>    </form>
+      </div>
+  </div>
+
+  <div id="task3">
+    <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+p{
+    line-height: 2;
+    text-indent: 20px;
+}
+p::first-letter{
+    color:#87CEFA;
+    font-size: 30px;
+    line-height: 0;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+.box-bg:hover{
+    background-color: #87CEFA;
+}
+.box-bg h2:hover{
+    color: white;
+}
+.tm-banner{
+    padding: 0;
+    border: solid 30px #F4F4F4;
+}
+.tm-main-nav, section, .tm-content-header{
+    box-shadow: 0px 0px 7px rgb(0 0 0/ 50%);
+}
+section::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 30px solid #87CEFA;
+    border-right: 250px solid transparent;
+}
+.carousel-content .flex-item .tm-section-title{
+    color:  gainsboro;
+    letter-spacing: 5px;
+}
+h2 + p {
+    font-style: italic;
+  }
+  ol li a {
+    color: rgb(0, 0, 0);
+}
+ol li a:visited {
+    text-decoration-color: #000;
+}
+
+ol li a:hover {
+    color: #84d2db;
+    text-decoration-color: unset;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+.text::after {
+    position: absolute;
+    content: 'New';
+    color: red;
+    font-weight: bold;
+    font-size: 9px;
+    vertical-align: super;
+    font-variant: small-caps;
+  }
+.box-work{
+    padding: 10px;
+}
+.box-work p::first-letter{
+    color: #000;
+}
+.box-work p{
+    text-indent: 0px;
+}
+.box-work:nth-child(even) {
+    background-color:#F2F2F2;
+    
+}
+#contact button {
+    border: 2px solid lightskyblue;
+    border-radius: 0px;
+    background-color: white;
+    color: lightskyblue;
+    float: right;
+    width: 120px;
+    height: 45px;
+}
+#contact button:hover{
+    background-color: lightskyblue;
+    color: #fff;
+}
+.mandatory-field:after {
+    content:" *";
+    color: red;
+}
+.tm-nav-item:hover{
+    background-color: #F4F4F4;
+}
+@media print {
+    img{
+        width: 250px;
+    }
+    #about, 
+    #ideas,
+    .heading,
+    .blocks,
+    section.tm-content-box,
+    .tm-sidebar{
+        display: none;
+    }
+    .tm-banner{
+        border: none;
+    }
+    section::before{
+        display: none;
+    }
+}

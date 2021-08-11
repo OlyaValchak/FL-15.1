@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./external-service.js"></script>
+    <title>FE Lab 15</title>
+  </head>
+  <body>
+    <div id="app-root">
+      <h1>Countries Search</h1>
+      <form action="#" class="form">
+        <div class= divradio>
+          <p>Please choose type of search</p>
+          <div class="radioparent">
+            <div>
+              <input type="radio" class="radio" name="radio" id="region" value="By Region" onclick="RegionChoice()">
+              <label for="By Region">By Region</label>
+            </div>
+            <div>
+              <input type="radio" class="radio" name="radio" id="language" value="By Language" onclick="return LanguageChoice()">
+              <label for="By Language">By Language</label>
+            </div>
+          </div>
+          </div>
+
+       
+        <div class="divselect">
+          <p>Please choose search query</p>
+          <select name="select" id="select" onselect="return selectChoise('hideValuesOnSelect', this)">
+            <option>Select value</option>
+            <!-- <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Oceania">Oceania</option> -->
+            
+          </select>
+        </div>
+      </form>
+      <div id="hideValuesOnSelect">This is the Javascript</div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
